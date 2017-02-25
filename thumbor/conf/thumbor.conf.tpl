@@ -227,7 +227,7 @@ MAX_ID_LENGTH = {{ MAX_ID_LENGTH | default(32) }}
 
 ## Host to send statsd instrumentation to
 ## Defaults to: None
-STATSD_HOST = {{ STATSD_HOST | default(None) }}
+STATSD_HOST = '{{ STATSD_HOST | default(None) }}'
 
 ## Port to send statsd instrumentation to
 ## Defaults to: 8125
@@ -235,7 +235,7 @@ STATSD_PORT = {{ STATSD_PORT | default(8125) }}
 
 ## Prefix for statsd
 ## Defaults to: None
-STATSD_PREFIX = {{ STATSD_PREFIX | default(None) }}
+STATSD_PREFIX = '{{ STATSD_PREFIX | default(None) }}'
 
 ################################################################################
 
